@@ -25,6 +25,7 @@
         "typescript": "5.1.6"
     },
     "devDependencies": {
+        "@netlify/plugin-nextjs": "^4.40.0",
         "@types/react-datepicker": "^4.15.0"
     }
 }
