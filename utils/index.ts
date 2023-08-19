@@ -67,14 +67,14 @@ export async function fetchUserRegister(data: DataLoginProps) {
     'Content-Type': 'application/json'
   };
 
-  return await fetch(`https://backend-server-pl7n.onrender.com/users/login`, {
+  return await fetch(`http://ec2-3-84-239-242.compute-1.amazonaws.com:8080/users/login`, {
     method: 'POST',
     headers,
     body: JSON.stringify({ data })
   }).then(response => response.json());
 }
 export async function fetchUserLogin(email: string, password: string) {
-  const url = 'https://backend-server-pl7n.onrender.com/users/login';
+  const url = 'http://ec2-3-84-239-242.compute-1.amazonaws.com:8080/users/login';
   const headers = {
     'Content-Type': 'application/json',
   };
